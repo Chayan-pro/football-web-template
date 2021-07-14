@@ -6,22 +6,23 @@
 /* ----------
    common style
 -------- */
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-.container{
+.container {
     background: #2D25A0;
     width: 100%;
     height: 650px;
 }
+
 /*-------------
     congrats-area
 --------------  */
-.congrats-area{
+.congrats-area {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 60px 90px;
 }
 
@@ -34,6 +35,7 @@ body{
     text-transform: capitalize;
     margin-bottom: 27px;
 }
+
 /* congrats-button  */
 .congrats-button {
     padding: 10px 24px;
@@ -44,41 +46,102 @@ body{
     font-weight: 500;
     outline: 0;
 }
-.congrats-button .fa-arrow-right{
+
+.congrats-button .fa-arrow-right {
     font-size: 16px;
     color: #fff;
     margin-left: 10px;
 }
+
 /* congrats hover */
-.congrats-button:hover .fa-arrow-right{
+.congrats-button:hover .fa-arrow-right {
     margin-left: 30px;
-    transition: margin-left 0.3s ease-in-out 0.5s ;
+    transition: margin-left 0.3s ease-in-out 0.5s;
 }
 
 /* congrats-gallery */
-.congrats-gallery img{
+.congrats-gallery img {
     width: 556px;
     height: 438px;
 }
+
 /* feature-gallery */
 .feature-gallery {
     padding: 80px 0;
+    display: flex;
+    justify-content: center;
 }
+
 .feature-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     width: 1050px;
     grid-column-gap: 30px;
+    place-items: center;
 }
-.feature-area{
+
+.feature-area {
     width: 330px;
     height: 474px;
     text-align: center;
     background: #FFFFFF;
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 27px;
 }
-.feature-img img{
-    width: 300px;
+
+.feature-img img {
+    width: 100%;
     height: 256px;
+}
+.feature-tittle h2 {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin: 16px 0 10px 0;
+}
+.feature-text {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+/*----------------- popular-video-sec
+------------------- */
+.popular-video-sec{
+    background-image: url("../images/feature-football.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.7;
+    height: 450px;
+}
+.video-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.video-info{
+    width: 100%;
+    text-align: center;
+}
+.video-info .video-heading{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.video-info .video-subheading {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 6px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
