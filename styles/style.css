@@ -110,7 +110,8 @@ body {
     line-height: 1.5;
 }
 
-/*----------------- popular-video-sec
+/*----------------- 
+   popular-video-sec
 ------------------- */
 .popular-video-sec{
     background-image: url("../images/match.jpg");
@@ -167,4 +168,66 @@ body {
     background-color: #fff;
     color: #222;
     transition: all ease 0.3s;
+}
+/*------------
+ fun-shop
+ -------------- */
+.fun-shop-sec {
+    padding: 50px 0;
+}
+.fun-shop-area .fun-tittle{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #18191F;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ .fun-shop-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-column-gap: 30px;
+    place-items: center;
+}
+.single-fun-box{
+    width: 330px;
+    height: 484px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    padding: 15px;
+    border-radius: 11px;
+}
+.fun-shop-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: capitalize;
+    color: #18191F;
+}
+.fun-shop-info .fun-price{
+    color: #FFC321;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 10px 0 10px 0;
+}
+.fun-image{
+    width: 100%;
+    height: 370px;
+    border-radius: 11px;
+    position: relative;
+    cursor: pointer;
+}
+.fun-shop-cart a{
+    padding: 14px 35px;
+    background-color: #FFC321;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+}
+.single-fun-box:hover .fun-shop-cart a {
+    display: block;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
