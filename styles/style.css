@@ -175,8 +175,11 @@ body {
 /*------------
  fun-shop
  -------------- */
+ 
 .fun-shop-sec {
     padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 .fun-shop-area .fun-tittle{
     width: 100%;
@@ -308,6 +311,7 @@ body {
         width: 100%;
         height: auto;
         padding: 0;
+        margin-bottom: 35px;
     }
     
     .feature-img img {
@@ -333,7 +337,7 @@ body {
         grid-template-columns: 1fr;
     }
     .single-fun-box {
-        margin-bottom: 24px;
+        margin-bottom: 35px;
     }
     .footer-sec {
         padding: 40px 0;
