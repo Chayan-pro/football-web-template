@@ -76,7 +76,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    width: 1050px;
     grid-column-gap: 30px;
     place-items: center;
 }
@@ -114,7 +113,7 @@ body {
 /*----------------- popular-video-sec
 ------------------- */
 .popular-video-sec{
-    background-image: url("../images/feature-football.jpg");
+    background-image: url("../images/match.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -144,4 +143,28 @@ body {
     margin-top: 6px;
     text-transform: uppercase;
     margin-bottom: 0;
+}
+.video-info .video-paragraph {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 250px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.video-info .video-btn{
+    padding: 14px 35px;
+    border: 5px solid #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    outline: 0;
+    overflow: hidden;
+}
+.video-btn:hover{
+    background-color: #fff;
+    color: #222;
+    transition: all ease 0.3s;
 }
