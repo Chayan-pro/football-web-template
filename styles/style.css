@@ -212,6 +212,11 @@ body {
     font-size: 28px;
     margin: 10px 0 10px 0;
 }
+.fun-images{
+    position: relative;
+    overflow: hidden;
+    transition: all ease 500ms;
+}
 .fun-image{
     width: 100%;
     height: 370px;
@@ -219,15 +224,54 @@ body {
     position: relative;
     cursor: pointer;
 }
-.fun-shop-cart a{
+.fun-shop-cart a {
     padding: 14px 35px;
     background-color: #FFC321;
     text-decoration: none;
     color: #fff;
     position: absolute;
+    left: -100%;
+    top: 44%;
+    /* display: none; */
+    transition: all ease 500ms;
 }
-.single-fun-box:hover .fun-shop-cart a {
+.fun-images:hover .fun-shop-cart a{
     display: block;
+    
+    left: 28%;
+    transition: all ease 500ms;
+}
+
+/* ------------
+    footer-sec
+-------------- */
+.footer-sec{
+    padding: 60px 0;
+    text-align: center;
+}
+.footer-top .footer-img{
+    width: 265px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.footer-icon i{
+   margin-right: 14px;
+   height: 32px;
+   width: 32px;
+   border-radius: 50%;
+   background-color: #E7E7E8;
+   line-height: 32px;
+   color: #969BAB;
+}
+.footer-botom .footer-text{
+    font-size: 18px;
+    color: #000000;
+    margin-top: 20px;
+    font-weight: normal;
+}
+.footer-icon i:hover {
+    transform: all ease 500ms;
+    color: #fff;
+    background-color: #78E072;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
 }
